@@ -1,11 +1,11 @@
 /**
  * Create Device Table Model w/specified entry fields
  */
-'use strict';
+
 module.exports = (sequelize, Sequalize) => {
-    const Device = sequelize.define('Device', {
-        Name: Sequalize.STRING,
-        Model: Sequalize.STRING,
+    const device = sequelize.define('device', {
+        make: {type: Sequalize.STRING},
+        modelName: {type: Sequalize.STRING},
       }, {});
-  return Device;
+  return device;
 };
