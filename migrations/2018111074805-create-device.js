@@ -13,23 +13,23 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-    Name: {
+    make: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: DataTypes.STRING,
     },
-    Model: {
+    modelName: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: DataTypes.STRING,
     },
-      createdAt: {
+    createdAt: {
         allowNull: false,
         type: Sequelize.DATE
       },
-      updatedAt: {
+    updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
       }
